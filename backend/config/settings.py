@@ -33,6 +33,7 @@ SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.onrender.com",
+    "https://cse-dept-v-0-1.vercel.app",
 ]
 
 # --------------------------------------------------
@@ -42,9 +43,17 @@ CSRF_TRUSTED_ORIGINS = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5500",
     "http://127.0.0.1:5500",
+    "https://cse-dept-v-0-1.vercel.app",
 ]
 
-CORS_ALLOW_METHODS = ["GET"]
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
 CORS_ALLOW_HEADERS = list(default_headers)
 
 # --------------------------------------------------
