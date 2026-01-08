@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACSESS | Innovation</title>
+  <title>ACSESS | Dashboard</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
 </head>
 <body>
 
@@ -23,10 +22,8 @@
   <nav>
     <a href="#">Home</a>
     <a href="#">About</a>
-    <a href="#">Event</a>
-   
+      <a href="#">Event</a>
     <a class="active" href="#">Dashboard</a>
-    
     <a href="#">Contact</a>
   </nav>
 
@@ -39,64 +36,48 @@
   </div>
 </header>
 
-  <!-- INNOVATION SECTION -->
-  <section class="innovation">
-    <h2>Faculty Assistance in Student Innovation</h2>
+  <!-- DASHBOARD -->
+  <section class="dashboard">
+    <h2>Dashboard</h2>
 
-    <div class="innovation-grid">
+    <div class="dashboard-grid">
 
-      <!-- Innovation Card -->
-      <div class="innovation-card" onclick="openPopup('Project Mentorship','Faculty-guided student projects focused on real-world problem solving.')">
-        <img src="assets/innovation1.jpg" alt="Innovation">
-        <h4>Project Mentorship</h4>
-        <p>Jan 2024</p>
-        <span>Conducted by CSE Faculty</span>
+      <!-- Event Calendar -->
+      <div class="dashboard-card">
+        <h3>📅 Event Calendar</h3>
+        <p>
+          View all upcoming ACSESS events for the current semester,
+          including workshops, seminars, and competitions.
+        </p>
+
+        <ul>
+          <li>Python Workshop – Mar 20</li>
+          <li>Industry Seminar – Mar 25</li>
+          <li>Hackathon – Apr 05</li>
+        </ul>
       </div>
 
-      <div class="innovation-card" onclick="openPopup('Hackathon Guidance','Faculty mentoring teams during hackathons and competitions.')">
-        <img src="assets/innovation2.jpg" alt="Innovation">
-        <h4>Hackathon Guidance</h4>
-        <p>Feb 2024</p>
-        <span>Conducted by ACSESS</span>
-      </div>
+      <!-- Achievements -->
+      <div class="dashboard-card">
+        <h3>🏆 Achievements</h3>
+        <p>
+          Highlights of student and club achievements in academics,
+          competitions, and technical events.
+        </p>
 
-      <div class="innovation-card" onclick="openPopup('Startup Support','Helping students convert ideas into startups.')">
-        <img src="assets/innovation3.jpg" alt="Innovation">
-        <h4>Startup Support</h4>
-        <p>Mar 2024</p>
-        <span>Industry + Faculty</span>
-      </div>
-
-      <div class="innovation-card" onclick="openPopup('Research Assistance','Guidance for research papers and publications.')">
-        <img src="assets/innovation4.jpg" alt="Innovation">
-        <h4>Research Assistance</h4>
-        <p>Apr 2024</p>
-        <span>CSE Department</span>
-      </div>
-
-      <div class="innovation-card" onclick="openPopup('Innovation Lab','Hands-on lab sessions for new technologies.')">
-        <img src="assets/innovation5.jpg" alt="Innovation">
-        <h4>Innovation Lab</h4>
-        <p>May 2024</p>
-        <span>ACSESS Team</span>
+        <ul>
+          <li>🏅 Winners – Inter-College Hackathon</li>
+          <li>🥈 2nd Place – Coding Marathon</li>
+          <li>🎓 50+ Students Certified (2024)</li>
+        </ul>
       </div>
 
     </div>
   </section>
 
 
-  <!-- POPUP -->
-  <div class="popup" id="popup">
-    <div class="popup-content">
-      <h3 id="popup-title"></h3>
-      <p id="popup-text"></p>
-      <button onclick="closePopup()">Close</button>
-    </div>
-  </div>
-
-
   <!-- FOOTER (reuse same footer code) -->
-   <footer class="footer">
+    <footer class="footer">
     <div class="footer-grid">
 
       <div class="footer-about">
@@ -140,8 +121,8 @@
     </div>
   </footer>
 
-<script src="\js\innovation.js"></script>
+<script src="\js\index.js"></script>
 
-  
+ 
 </body>
 </html>

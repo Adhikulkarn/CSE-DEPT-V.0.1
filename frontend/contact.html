@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ACSESS | Department of CSE</title>
+  <title>ACSESS | Contact</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
+  <!-- NAVBAR (reuse same navbar code) -->
+<header class="navbar">
   <div class="logo">
     <img src="\assets\Dept.png" alt="ACSESS Logo">
     <div>
@@ -20,11 +20,11 @@
   </div>
 
   <nav>
-    <a class="active" href="#">Home</a>
+    <a href="#">Home</a>
     <a href="#">About</a>
-    <a href="#">Events</a>
-    <a href="#">Dashboard</a>
-    <a href="#">Contact</a>
+      <a href="#">Event</a>
+       <a href="#">Dashboard</a>
+    <a class="active" href="#">Contact</a>
   </nav>
 
   <div class="amc-logo">
@@ -36,46 +36,46 @@
   </div>
 </header>
 
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p class="contact-subtext">
+      Feel free to reach out to ACSESS for collaborations, queries, or event information.
+    </p>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-content">
-      <!-- <span class="tag">✨ Faculty Assistance in Student Innovation</span> -->
+    <div class="contact-container">
 
-      <h1>
-        Department of <br>
-        <span>Computer Science</span>
-      </h1>
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
 
-      <p>
-        Welcome to ACSESS – where innovation meets excellence<br>
-        Built and Maintained By Acsesss Students Forum.
-      </p>
-
-      <div class="hero-buttons">
-        <button class="btn-primary">Explore More about Department →</button>
-        <button class="btn-secondary">Join ACSESS</button>
+        <p><strong>Email:</strong> acsess@university.edu</p>
+        <p><strong>Phone:</strong> +91 123 456 7890</p>
+        <p><strong>Location:</strong><br>
+          Department of Computer Science,<br>
+          AMC Engineering College,<br>
+          Bengaluru
+        </p>
       </div>
 
-      <div class="stats">
-        <div>
-          <h2>500+</h2>
-          <p>Students</p>
-        </div>
-        <div>
-          <h2>50+</h2>
-          <p>Events</p>
-        </div>
-        <div>
-          <h2>20+</h2>
-          <p>Projects</p>
-        </div>
+      <!-- CONTACT FORM -->
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </div>
+
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+
+  <!-- FOOTER (reuse same footer code) -->
+   <footer class="footer">
     <div class="footer-grid">
 
       <div class="footer-about">
@@ -118,6 +118,7 @@
       © 2026 ACSESS – Department of Computer Science & Engineering. All rights reserved.
     </div>
   </footer>
+
 
   <script src="\js\index.js"></script>
 </body>

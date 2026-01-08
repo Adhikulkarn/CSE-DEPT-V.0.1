@@ -1,27 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Events | CSE</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACSESS | Events</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>Events</h1>
-
-    <section>
-      <h2>Upcoming Events</h2>
-      <div id="upcoming-events" class="event-grid"></div>
-    </section>
-
-    <section style="margin-top: 3rem;">
-      <h2>Past Events</h2>
-      <div id="past-events" class="event-grid"></div>
-    </section>
+  <!-- NAVBAR (reuse SAME navbar HTML from index.html) -->
+  <!-- paste navbar code here exactly as before -->
+    <!-- NAVBAR -->
+  <header class="navbar">
+  <div class="logo">
+    <img src="\assets\Dept.png" alt="ACSESS Logo">
+    <div>
+      <h3>ACSESS</h3>
+      <span>Dept of CSE</span>
+    </div>
   </div>
 
-  <script src="js/api.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/events.js"></script>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a class="active" href="#">Event</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="amc-logo">
+    <img src="\assets\amc-logo.png" alt="AMC Logo">
+  </div>
+  <!-- Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+  </div>
+</header>
+
+  <!-- EVENTS HERO -->
+  <section class="events-hero">
+    <h1>Events & Activities</h1>
+    <p>
+      Discover workshops, seminars, hackathons, and more.  
+      Stay updated with all ACSESS events and never miss an opportunity.
+    </p>
+  </section>
+
+  <!-- EVENTS GRID -->
+  <section class="events-section">
+    <div class="events-grid">
+
+      <div class="event-card">
+        <img src="assets/event1.jpg" alt="TechFest">
+        <div class="event-content">
+          <span class="event-tag">Festival</span>
+          <h3>TechFest 2024</h3>
+          <p>March 15–17, 2024</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event2.jpg" alt="Workshop">
+        <div class="event-content">
+          <span class="event-tag">Workshop</span>
+          <h3>Python Workshop</h3>
+          <p>March 20, 2024</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event3.jpg" alt="Seminar">
+        <div class="event-content">
+          <span class="event-tag">Seminar</span>
+          <h3>Industry Expert Seminar</h3>
+          <p>March 25, 2024</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event4.jpg" alt="Hackathon">
+        <div class="event-content">
+          <span class="event-tag">Competition</span>
+          <h3>24hr Hackathon</h3>
+          <p>April 5, 2024</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event5.jpg" alt="Networking">
+        <div class="event-content">
+          <span class="event-tag">Networking</span>
+          <h3>Alumni Connect</h3>
+          <p>April 12, 2024</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="assets/event6.jpg" alt="Bootcamp">
+        <div class="event-content">
+          <span class="event-tag">Workshop</span>
+          <h3>Web Dev Bootcamp</h3>
+          <p>April 20, 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT DEPARTMENT -->
+<section class="about-dept">
+  <h2>About Department</h2>
+<br>
+  <div class="about-dept-box">
+    <div class="dept-logo">
+      <img src="\assets\Dept.png" alt="Dept Logo">
+    </div>
+
+    <div class="dept-description">
+      <p>
+        The Department of Computer Science focuses on academic excellence,
+        innovation, and industry-ready skills. ACSESS acts as a bridge between
+        students and real-world technology through events, workshops, and
+        collaborative learning.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER (reuse SAME footer HTML) -->
+    <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+
+      <div class="footer-about">
+        <h3>ACSESS</h3>
+        <p>
+          Built and maintained by ACSESS Students Forum.
+          Empowering innovation and excellence in Computer Science.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Us</h4>
+        <p><i class="fa fa-envelope"></i> acsess@university.edu</p>
+        <p><i class="fa fa-phone"></i> +91 123 456 7890</p>
+        <p><i class="fa fa-location-dot"></i> Department of CSE, University Campus</p>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 ACSESS – Department of Computer Science & Engineering. All rights reserved.
+    </div>
+  </footer>
+
+<script src="\js\index.js"></script>
 </body>
 </html>
